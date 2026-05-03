@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabib — Modern Healthcare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span><i class="fa fa-phone"></i> +91 9000 458 008</span>
+      <span><i class="fa fa-envelope"></i> support@tabib.com</span>
+      <span class="topbar-right"><i class="fa fa-clock"></i> Mon–Fri: 5:00 AM – 10:30 PM</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-dot"></span>Tabib
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="doctors.html">Our Doctors</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="appointment.html" class="btn-nav">Book Appointment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Trusted Healthcare, Since 2019</p>
+      <h1 class="hero-title">Your Health,<br><span>Our Priority</span></h1>
+      <p class="hero-sub">Compassionate care, expert doctors, and modern facilities — all in one place.</p>
+      <div class="hero-cta">
+        <a href="appointment.html" class="btn-primary">Book Appointment</a>
+        <a href="doctors.html" class="btn-ghost">Meet Our Doctors</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card floating">
+        <i class="fa fa-heart-pulse"></i>
+        <div>
+          <strong>24/7 Emergency</strong>
+          <span>Always available for you</span>
+        </div>
+      </div>
+      <div class="hero-bg-circle"></div>
+    </div>
+  </section>
+
+  <!-- Quick Info Cards -->
+  <section class="quick-info">
+    <div class="container grid-3">
+      <div class="info-card">
+        <div class="info-icon"><i class="fa fa-truck-medical"></i></div>
+        <h3>Emergency Services</h3>
+        <p>Round-the-clock emergency care with rapid response teams ready at all times.</p>
+        <a href="contact.html" class="link-arrow">Call Us <i class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="info-card featured">
+        <div class="info-icon"><i class="fa fa-calendar-check"></i></div>
+        <h3>Online Appointments</h3>
+        <p>Skip the wait. Book, reschedule or cancel your appointment online in seconds.</p>
+        <a href="appointment.html" class="link-arrow">Get Appointment <i class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fa fa-clock"></i></div>
+        <h3>Doctor Availability</h3>
+        <p>View live schedules and find the best time slot that works for you.</p>
+        <a href="doctors.html" class="link-arrow">View Schedule <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments -->
+  <section class="departments">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Specializations</p>
+        <h2>Departments We Serve</h2>
+        <p class="section-sub">Comprehensive care across all major medical disciplines with world-class specialists.</p>
+      </div>
+      <div class="dept-grid">
+        <div class="dept-card"><div class="dept-icon">🫀</div><h4>Cardiology</h4></div>
+        <div class="dept-card"><div class="dept-icon">🧠</div><h4>Neurology</h4></div>
+        <div class="dept-card"><div class="dept-icon">🦷</div><h4>Dental Care</h4></div>
+        <div class="dept-card"><div class="dept-icon">👁️</div><h4>Eye Care</h4></div>
+        <div class="dept-card"><div class="dept-icon">🧬</div><h4>Dermatology</h4></div>
+        <div class="dept-card"><div class="dept-icon">🩺</div><h4>Pediatrician</h4></div>
+        <div class="dept-card"><div class="dept-icon">🔬</div><h4>Surgeries</h4></div>
+        <div class="dept-card"><div class="dept-icon">🏥</div><h4>General Clinic</h4></div>
+        <div class="dept-card"><div class="dept-icon">💪</div><h4>Physiotherapy</h4></div>
+        <div class="dept-card"><div class="dept-icon">👶</div><h4>Gynecology</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <section class="stats">
+    <div class="container grid-4">
+      <div class="stat-item"><strong>10,000+</strong><span>Patients Served</span></div>
+      <div class="stat-item"><strong>50+</strong><span>Specialist Doctors</span></div>
+      <div class="stat-item"><strong>10</strong><span>Departments</span></div>
+      <div class="stat-item"><strong>24/7</strong><span>Emergency Care</span></div>
+    </div>
+  </section>
+
+  <!-- Hours Section -->
+  <section class="hours-section">
+    <div class="container hours-grid">
+      <div class="hours-text">
+        <p class="section-tag">Visiting Hours</p>
+        <h2>We're Here When You Need Us</h2>
+        <p>Our facility operates with extended hours to accommodate your busy schedule. Emergency services are available around the clock.</p>
+        <a href="appointment.html" class="btn-primary">Schedule a Visit</a>
+      </div>
+      <div class="hours-table">
+        <div class="hours-row">
+          <span>Monday – Friday</span>
+          <span class="hours-time">5:00 AM – 10:30 PM</span>
+        </div>
+        <div class="hours-row">
+          <span>Even Saturdays</span>
+          <span class="hours-time">7:30 AM – 10:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span>Sunday</span>
+          <span class="hours-time">8:00 AM – 3:00 PM</span>
+        </div>
+        <div class="hours-row emergency">
+          <span>Emergency</span>
+          <span class="hours-time">24 / 7</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-brand"><span class="brand-dot"></span>Tabib</a>
+        <p>Modern healthcare, compassionate service. Your wellness is at the heart of everything we do.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p><i class="fa fa-location-dot"></i> Hitech City, Hyderabad</p>
+        <p><i class="fa fa-phone"></i> 080-8880-4444</p>
+        <p><i class="fa fa-envelope"></i> support@tabib.com</p>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Newsletter</h5>
+        <p>Stay updated with health tips and news.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tabib. Designed by <strong>Nida Firdous</strong></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

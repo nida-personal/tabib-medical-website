@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Tabib</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span><i class="fa fa-phone"></i> +91 9000 458 008</span>
+      <span><i class="fa fa-envelope"></i> support@tabib.com</span>
+      <span class="topbar-right"><i class="fa fa-clock"></i> Mon–Fri: 5:00 AM – 10:30 PM</span>
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand"><span class="brand-dot"></span>Tabib</a>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown-menu"><li><a href="doctors.html">Our Doctors</a></li></ul>
+        </li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="appointment.html" class="btn-nav">Book Appointment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <p class="section-tag">Get in Touch</p>
+    <h1>Contact Us</h1>
+    <p>We're here to help. Reach out with any questions or concerns.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-tag">Our Location</p>
+        <h2>Visit, Call, or Write to Us</h2>
+        <p>Our team is available during clinic hours to assist you. For emergencies, call us directly — we're available 24/7.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa fa-location-dot"></i></div>
+            <div>
+              <strong>Address</strong>
+              <span>Hitech City, Hyderabad, Telangana — 500081</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <span>080-8880-4444 (Toll Free) · Mon–Fri, 9 AM–6 PM</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <span>support@tabib.com</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa fa-clock"></i></div>
+            <div>
+              <strong>Emergency</strong>
+              <span>Available 24 hours, 7 days a week</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.999272541627!2d78.36776457868982!3d17.447753158677997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688beb557fa0ee!2sHITEC+City%2C+Hyderabad%2C+Telangana+500081!5e0!3m2!1sen!2sin!4v1556428724501!5m2!1sen!2sin"
+            width="100%" height="220" allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Send Us a Message</h3>
+        <div class="form-group">
+          <label for="c-name">Your Name</label>
+          <input type="text" id="c-name" class="form-control" placeholder="Full name" required>
+        </div>
+        <div class="form-group">
+          <label for="c-email">Email Address</label>
+          <input type="email" id="c-email" class="form-control" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="c-subject">Subject</label>
+          <input type="text" id="c-subject" class="form-control" placeholder="How can we help?" required>
+        </div>
+        <div class="form-group">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" class="form-control" rows="5" placeholder="Describe your question or concern…" required></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;justify-content:center;" onclick="handleContact(event)">
+          Send Message <i class="fa fa-paper-plane"></i>
+        </button>
+        <p id="contact-success" style="display:none;color:#0d9488;text-align:center;margin-top:16px;font-weight:600;">
+          ✓ Message sent! We'll get back to you within 24 hours.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-brand"><span class="brand-dot"></span>Tabib</a>
+        <p>Modern healthcare, compassionate service.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p><i class="fa fa-location-dot"></i> Hitech City, Hyderabad</p>
+        <p><i class="fa fa-phone"></i> 080-8880-4444</p>
+        <p><i class="fa fa-envelope"></i> support@tabib.com</p>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Newsletter</h5>
+        <p>Stay updated with health tips and news.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Tabib. Designed by <strong>Nida Firdous</strong></p></div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function handleContact(e) {
+      e.preventDefault();
+      document.getElementById('contact-success').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

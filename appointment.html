@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment — Tabib</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span><i class="fa fa-phone"></i> +91 9000 458 008</span>
+      <span><i class="fa fa-envelope"></i> support@tabib.com</span>
+      <span class="topbar-right"><i class="fa fa-clock"></i> Mon–Fri: 5:00 AM – 10:30 PM</span>
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand"><span class="brand-dot"></span>Tabib</a>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown-menu"><li><a href="doctors.html">Our Doctors</a></li></ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="appointment.html" class="btn-nav active">Book Appointment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <p class="section-tag">Easy Booking</p>
+    <h1>Book an Appointment</h1>
+    <p>Schedule a visit in just a few steps. We'll confirm within 24 hours.</p>
+  </section>
+
+  <section class="appointment-section">
+    <div class="container appointment-grid">
+      <div class="appointment-info">
+        <p class="section-tag">Why Choose Us</p>
+        <h2>Simple, Fast, Reliable</h2>
+        <p>We've made booking as easy as possible so you can focus on what matters — your health.</p>
+        <ul class="info-list">
+          <li>
+            <i class="fa fa-shield-halved"></i>
+            <div><strong>Secure & Private</strong><span>Your data is fully encrypted and protected.</span></div>
+          </li>
+          <li>
+            <i class="fa fa-clock"></i>
+            <div><strong>Quick Confirmation</strong><span>Receive confirmation within 24 hours of booking.</span></div>
+          </li>
+          <li>
+            <i class="fa fa-calendar-check"></i>
+            <div><strong>Flexible Scheduling</strong><span>Easy to reschedule or cancel at any time.</span></div>
+          </li>
+          <li>
+            <i class="fa fa-user-doctor"></i>
+            <div><strong>Choose Your Doctor</strong><span>Pick a specialist that best fits your needs.</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <h3>Fill in Your Details</h3>
+        <div class="form-group">
+          <label for="patient-name">Patient Name</label>
+          <input type="text" id="patient-name" class="form-control" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="patient-email">Email Address</label>
+          <input type="email" id="patient-email" class="form-control" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="patient-dob">Date of Birth</label>
+          <input type="date" id="patient-dob" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="doctor-select">Select Doctor</label>
+          <select id="doctor-select" class="form-control">
+            <option value="">Choose a doctor</option>
+            <option value="benson">Dr. Benson — Cardiology</option>
+            <option value="larissa">Dr. Larissa — Dentistry</option>
+            <option value="rohan">Dr. Rohan — Cardiology</option>
+            <option value="kumar">Dr. Kumar — Surgery</option>
+            <option value="harika">Dr. Harika — Surgery</option>
+            <option value="rahul">Dr. Rahul — Neurology</option>
+            <option value="kanika">Dr. Kanika — Neurology</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="appt-date">Preferred Appointment Date</label>
+          <input type="date" id="appt-date" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Additional Notes (optional)</label>
+          <textarea id="message" class="form-control" placeholder="Briefly describe your symptoms or any specific concerns…"></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;justify-content:center;" onclick="handleSubmit(event)">
+          Confirm Booking <i class="fa fa-arrow-right"></i>
+        </button>
+        <p id="form-success" style="display:none;color:#0d9488;text-align:center;margin-top:16px;font-weight:600;">
+          ✓ Appointment request submitted! We'll be in touch shortly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-brand"><span class="brand-dot"></span>Tabib</a>
+        <p>Modern healthcare, compassionate service.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p><i class="fa fa-location-dot"></i> Hitech City, Hyderabad</p>
+        <p><i class="fa fa-phone"></i> 080-8880-4444</p>
+        <p><i class="fa fa-envelope"></i> support@tabib.com</p>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Newsletter</h5>
+        <p>Stay updated with health tips and news.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Tabib. Designed by <strong>Nida Firdous</strong></p></div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
